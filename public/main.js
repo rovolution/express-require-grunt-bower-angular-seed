@@ -1,14 +1,14 @@
 require.config({
-  "baseUrl": "public",
-  "paths": {
-    "angular": "js/vendor/angular/angular",
+  baseUrl: "public",
+  paths: {
+    angular: "js/vendor/angular/angular",
     "angular-cookies": "js/vendor/angular-cookies/angular-cookies",
-    "jquery": "js/vendor/jquery/jquery"
+    jquery: "js/vendor/jquery/jquery"
   },
-  "shim": {
-    "angular": {
-      "exports": "angular",
-      "deps": [
+  shim: {
+    angular: {
+      exports: "angular",
+      deps: [
         "jquery"
       ]
     }

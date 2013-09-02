@@ -152,10 +152,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jasmine');
 
+
   // Register tasks
   grunt.registerTask('default', [ 'test:spec' ]);
-  grunt.registerTask('server',       [ 'bower', 'env:dev', 'livereload-start', 'express', 'watch' ]);
-  grunt.registerTask('server:built', [ 'env:build', 'express' ]);
+  grunt.registerTask('server:dev',       [ 'bower', 'env:dev', 'livereload-start', 'express', 'watch' ]);
+  grunt.registerTask('server:prod', [ 'env:build', 'express' ]);
   grunt.registerTask('watch', [ 'regarde' ]);
   grunt.registerTask('build', [ 'clean', 'copy', 'uglify', 'requirejs' ]);
 
